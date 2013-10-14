@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/settingbackground" >
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/spinner1"
+         android:layout_below="@+id/spinner1"
+         android:textColor="#FF0000"
+         android:textSize="40dip"
+         android:text="Snooze time" />
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/spinner2"
+         android:layout_below="@+id/spinner2"
+         android:text="Radious"
+         android:textColor="#FF0000"
+         android:textSize="40dip" />
+
+     <Spinner
+         android:id="@+id/spinner1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView1"
+         android:entries="@array/tones_arrays" />
+
+     <Spinner
+         android:id="@+id/spinner3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView3"
+         android:entries="@array/radious_arrays" />
+
+     <Spinner
+         android:id="@+id/spinner2"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/textView2"
+         android:entries="@array/time_arrays" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="300dp"
+         android:layout_height="50dp"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="36dp"
+         android:text="Select Tone"
+         android:textColor="#FF0000"
+         android:textSize="40dip" />
+
+</RelativeLayout>

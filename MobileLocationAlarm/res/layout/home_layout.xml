@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homebackground"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/destinationid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add Destination Place" />
+
+    <Button
+        android:id="@+id/currentlocationid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/destinationid"
+        android:layout_below="@+id/destinationid"
+        android:text="Current Location" />
+
+    <Button
+        android:id="@+id/gpscurrentlocatoinid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentlocationid"
+        android:layout_below="@+id/currentlocationid"
+        android:text="ActivateCurrentLocation" />
+
+    <TextView
+        android:id="@+id/alertid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gpscurrentlocatoinid"
+        android:text="Alert"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/alertmessageid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alertid"
+        android:text="Nothing has been added"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</RelativeLayout>
